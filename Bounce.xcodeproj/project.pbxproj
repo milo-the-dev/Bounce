@@ -15,10 +15,10 @@
 		723720161BEEB07700FA932A /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 723720141BEEB07700FA932A /* Quick.framework */; };
 		7237201B1BEEB22C00FA932A /* RxCocoa.framework.dSYM in Copy framework dSYMs */ = {isa = PBXBuildFile; fileRef = 723720191BEEB22C00FA932A /* RxCocoa.framework.dSYM */; };
 		7237201C1BEEB22C00FA932A /* RxSwift.framework.dSYM in Copy framework dSYMs */ = {isa = PBXBuildFile; fileRef = 7237201A1BEEB22C00FA932A /* RxSwift.framework.dSYM */; };
+		7237201F1BEEC10600FA932A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7237201E1BEEC10600FA932A /* ViewController.swift */; };
+		723720231BEEC15B00FA932A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 723720221BEEC15B00FA932A /* Assets.xcassets */; };
+		723720261BEEC18A00FA932A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 723720251BEEC18A00FA932A /* Main.storyboard */; };
 		723DBCC41BEE985D00016513 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 723DBCC31BEE985D00016513 /* AppDelegate.swift */; };
-		723DBCC61BEE985D00016513 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 723DBCC51BEE985D00016513 /* ViewController.swift */; };
-		723DBCC81BEE985D00016513 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 723DBCC71BEE985D00016513 /* Assets.xcassets */; };
-		723DBCCB1BEE985D00016513 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 723DBCC91BEE985D00016513 /* Main.storyboard */; };
 		723DBCD61BEE985D00016513 /* BounceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 723DBCD51BEE985D00016513 /* BounceTests.swift */; };
 /* End PBXBuildFile section */
 
@@ -66,12 +66,12 @@
 		723720141BEEB07700FA932A /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/Mac/Quick.framework; sourceTree = "<group>"; };
 		723720191BEEB22C00FA932A /* RxCocoa.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = RxCocoa.framework.dSYM; path = Carthage/Build/Mac/RxCocoa.framework.dSYM; sourceTree = "<group>"; };
 		7237201A1BEEB22C00FA932A /* RxSwift.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = RxSwift.framework.dSYM; path = Carthage/Build/Mac/RxSwift.framework.dSYM; sourceTree = "<group>"; };
+		7237201E1BEEC10600FA932A /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = View/Controllers/ViewController.swift; sourceTree = "<group>"; };
+		723720221BEEC15B00FA932A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = Resources/Assets.xcassets; sourceTree = "<group>"; };
+		723720251BEEC18A00FA932A /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Resources/Storyboards/Main.storyboard; sourceTree = "<group>"; };
+		723720281BEEC1A000FA932A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = "Resources/Other-Sources/Info.plist"; sourceTree = "<group>"; };
 		723DBCC01BEE985C00016513 /* Bounce.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bounce.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		723DBCC31BEE985D00016513 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		723DBCC51BEE985D00016513 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		723DBCC71BEE985D00016513 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		723DBCCA1BEE985D00016513 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		723DBCCC1BEE985D00016513 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		723DBCC31BEE985D00016513 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = Bounce/AppDelegate.swift; sourceTree = "<group>"; };
 		723DBCD11BEE985D00016513 /* BounceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BounceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		723DBCD51BEE985D00016513 /* BounceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BounceTests.swift; sourceTree = "<group>"; };
 		723DBCD71BEE985D00016513 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -119,10 +119,118 @@
 			name = dSYMs;
 			sourceTree = "<group>";
 		};
+		723720201BEEC10B00FA932A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				723720211BEEC11400FA932A /* Controllers */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		723720211BEEC11400FA932A /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				7237201E1BEEC10600FA932A /* ViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		723720241BEEC16700FA932A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				7237202B1BEEC24A00FA932A /* Nibs */,
+				7237202A1BEEC1A500FA932A /* Other-Sources */,
+				723720271BEEC18E00FA932A /* Storyboards */,
+				723720221BEEC15B00FA932A /* Assets.xcassets */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		723720271BEEC18E00FA932A /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				723720251BEEC18A00FA932A /* Main.storyboard */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		7237202A1BEEC1A500FA932A /* Other-Sources */ = {
+			isa = PBXGroup;
+			children = (
+				723720281BEEC1A000FA932A /* Info.plist */,
+			);
+			name = "Other-Sources";
+			sourceTree = "<group>";
+		};
+		7237202B1BEEC24A00FA932A /* Nibs */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Nibs;
+			sourceTree = "<group>";
+		};
+		7237202C1BEEC25D00FA932A /* Support */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Support;
+			sourceTree = "<group>";
+		};
+		7237202D1BEEC26A00FA932A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7237202E1BEEC26F00FA932A /* View */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		7237202E1BEEC26F00FA932A /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		7237202F1BEEC27B00FA932A /* View Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "View Model";
+			sourceTree = "<group>";
+		};
+		723720301BEEC28D00FA932A /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		723720311BEEC29C00FA932A /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Enums;
+			sourceTree = "<group>";
+		};
+		723720321BEEC2A100FA932A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		723720331BEEC2A800FA932A /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Protocols;
+			sourceTree = "<group>";
+		};
 		723DBCB71BEE985C00016513 = {
 			isa = PBXGroup;
 			children = (
 				723DBCC21BEE985C00016513 /* Bounce */,
+				723DBCC31BEE985D00016513 /* AppDelegate.swift */,
 				723DBCD41BEE985D00016513 /* BounceTests */,
 				7237201D1BEEB23600FA932A /* dSYMs */,
 				723720171BEEB0CE00FA932A /* Frameworks */,
@@ -145,11 +253,15 @@
 		723DBCC21BEE985C00016513 /* Bounce */ = {
 			isa = PBXGroup;
 			children = (
-				723DBCC31BEE985D00016513 /* AppDelegate.swift */,
-				723DBCC51BEE985D00016513 /* ViewController.swift */,
-				723DBCC71BEE985D00016513 /* Assets.xcassets */,
-				723DBCC91BEE985D00016513 /* Main.storyboard */,
-				723DBCCC1BEE985D00016513 /* Info.plist */,
+				723720301BEEC28D00FA932A /* Controllers */,
+				723720311BEEC29C00FA932A /* Enums */,
+				723720321BEEC2A100FA932A /* Extensions */,
+				723720331BEEC2A800FA932A /* Protocols */,
+				7237202D1BEEC26A00FA932A /* Model */,
+				723720201BEEC10B00FA932A /* View */,
+				7237202F1BEEC27B00FA932A /* View Model */,
+				723720241BEEC16700FA932A /* Resources */,
+				7237202C1BEEC25D00FA932A /* Support */,
 			);
 			path = Bounce;
 			sourceTree = "<group>";
@@ -248,8 +360,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				723DBCC81BEE985D00016513 /* Assets.xcassets in Resources */,
-				723DBCCB1BEE985D00016513 /* Main.storyboard in Resources */,
+				723720231BEEC15B00FA932A /* Assets.xcassets in Resources */,
+				723720261BEEC18A00FA932A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -298,7 +410,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				723DBCC61BEE985D00016513 /* ViewController.swift in Sources */,
+				7237201F1BEEC10600FA932A /* ViewController.swift in Sources */,
 				723DBCC41BEE985D00016513 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -320,17 +432,6 @@
 			targetProxy = 723DBCD21BEE985D00016513 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		723DBCC91BEE985D00016513 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				723DBCCA1BEE985D00016513 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		723DBCD81BEE985D00016513 /* Debug */ = {
@@ -454,7 +555,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/Mac",
 				);
-				INFOPLIST_FILE = Bounce/Info.plist;
+				INFOPLIST_FILE = "Bounce/Resources/Other-Sources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.medleycrewllc.Bounce;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -471,7 +572,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/Mac",
 				);
 				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
-				INFOPLIST_FILE = Bounce/Info.plist;
+				INFOPLIST_FILE = "Bounce/Resources/Other-Sources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.medleycrewllc.Bounce;
 				PRODUCT_NAME = "$(TARGET_NAME)";

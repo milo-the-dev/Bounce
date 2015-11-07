@@ -71,7 +71,7 @@
 		723720251BEEC18A00FA932A /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Resources/Storyboards/Main.storyboard; sourceTree = "<group>"; };
 		723720281BEEC1A000FA932A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = "Resources/Other-Sources/Info.plist"; sourceTree = "<group>"; };
 		723DBCC01BEE985C00016513 /* Bounce.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bounce.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		723DBCC31BEE985D00016513 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = Bounce/AppDelegate.swift; sourceTree = "<group>"; };
+		723DBCC31BEE985D00016513 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		723DBCD11BEE985D00016513 /* BounceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BounceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		723DBCD51BEE985D00016513 /* BounceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BounceTests.swift; sourceTree = "<group>"; };
 		723DBCD71BEE985D00016513 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -230,7 +230,6 @@
 			isa = PBXGroup;
 			children = (
 				723DBCC21BEE985C00016513 /* Bounce */,
-				723DBCC31BEE985D00016513 /* AppDelegate.swift */,
 				723DBCD41BEE985D00016513 /* BounceTests */,
 				7237201D1BEEB23600FA932A /* dSYMs */,
 				723720171BEEB0CE00FA932A /* Frameworks */,
@@ -253,6 +252,7 @@
 		723DBCC21BEE985C00016513 /* Bounce */ = {
 			isa = PBXGroup;
 			children = (
+				723DBCC31BEE985D00016513 /* AppDelegate.swift */,
 				723720301BEEC28D00FA932A /* Controllers */,
 				723720311BEEC29C00FA932A /* Enums */,
 				723720321BEEC2A100FA932A /* Extensions */,

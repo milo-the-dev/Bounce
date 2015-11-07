@@ -13,6 +13,8 @@
 		723720111BEEAFFA00FA932A /* RxSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7237200D1BEEAFFA00FA932A /* RxSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		723720151BEEB07700FA932A /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 723720131BEEB07700FA932A /* Nimble.framework */; };
 		723720161BEEB07700FA932A /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 723720141BEEB07700FA932A /* Quick.framework */; };
+		7237201B1BEEB22C00FA932A /* RxCocoa.framework.dSYM in Copy framework dSYMs */ = {isa = PBXBuildFile; fileRef = 723720191BEEB22C00FA932A /* RxCocoa.framework.dSYM */; };
+		7237201C1BEEB22C00FA932A /* RxSwift.framework.dSYM in Copy framework dSYMs */ = {isa = PBXBuildFile; fileRef = 7237201A1BEEB22C00FA932A /* RxSwift.framework.dSYM */; };
 		723DBCC41BEE985D00016513 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 723DBCC31BEE985D00016513 /* AppDelegate.swift */; };
 		723DBCC61BEE985D00016513 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 723DBCC51BEE985D00016513 /* ViewController.swift */; };
 		723DBCC81BEE985D00016513 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 723DBCC71BEE985D00016513 /* Assets.xcassets */; };
@@ -43,6 +45,18 @@
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		723720181BEEB17300FA932A /* Copy framework dSYMs */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 16;
+			files = (
+				7237201B1BEEB22C00FA932A /* RxCocoa.framework.dSYM in Copy framework dSYMs */,
+				7237201C1BEEB22C00FA932A /* RxSwift.framework.dSYM in Copy framework dSYMs */,
+			);
+			name = "Copy framework dSYMs";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +64,8 @@
 		7237200D1BEEAFFA00FA932A /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/Mac/RxSwift.framework; sourceTree = "<group>"; };
 		723720131BEEB07700FA932A /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/Mac/Nimble.framework; sourceTree = "<group>"; };
 		723720141BEEB07700FA932A /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/Mac/Quick.framework; sourceTree = "<group>"; };
+		723720191BEEB22C00FA932A /* RxCocoa.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = RxCocoa.framework.dSYM; path = Carthage/Build/Mac/RxCocoa.framework.dSYM; sourceTree = "<group>"; };
+		7237201A1BEEB22C00FA932A /* RxSwift.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = RxSwift.framework.dSYM; path = Carthage/Build/Mac/RxSwift.framework.dSYM; sourceTree = "<group>"; };
 		723DBCC01BEE985C00016513 /* Bounce.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bounce.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		723DBCC31BEE985D00016513 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		723DBCC51BEE985D00016513 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -94,11 +110,21 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		7237201D1BEEB23600FA932A /* dSYMs */ = {
+			isa = PBXGroup;
+			children = (
+				723720191BEEB22C00FA932A /* RxCocoa.framework.dSYM */,
+				7237201A1BEEB22C00FA932A /* RxSwift.framework.dSYM */,
+			);
+			name = dSYMs;
+			sourceTree = "<group>";
+		};
 		723DBCB71BEE985C00016513 = {
 			isa = PBXGroup;
 			children = (
 				723DBCC21BEE985C00016513 /* Bounce */,
 				723DBCD41BEE985D00016513 /* BounceTests */,
+				7237201D1BEEB23600FA932A /* dSYMs */,
 				723720171BEEB0CE00FA932A /* Frameworks */,
 				723DBCC11BEE985C00016513 /* Products */,
 			);
@@ -167,6 +193,7 @@
 				723DBCCD1BEE985D00016513 /* Sources */,
 				723DBCCE1BEE985D00016513 /* Frameworks */,
 				723DBCCF1BEE985D00016513 /* Resources */,
+				723720181BEEB17300FA932A /* Copy framework dSYMs */,
 			);
 			buildRules = (
 			);

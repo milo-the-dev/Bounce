@@ -30,8 +30,7 @@ class NetworkController {
         
         let request = NSURLRequest(URL: url!)
         
-        return session
-            .rx_data(request)
+        return session.rx_data(request)
     }
 
 }

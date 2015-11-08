@@ -4,6 +4,8 @@
 //
 
 import Foundation
+import RxSwift
+import RxCocoa
 
 class NetworkController {
 
@@ -19,8 +21,12 @@ class NetworkController {
         self.session = session
     }
     
-    func fetchShots() -> NSData? {
-        return nil
+    func fetchShots() -> Observable<NSData> {
+        let url = NSURL(string: "https://api.dribbble.com/v1/shots?access_token=\(DribbbleAccessToken.ClientAccessToken.rawValue)")!
+        let request = NSURLRequest(URL: url)
+        return session
+            .rx_data(request)
     }
 
 }
+

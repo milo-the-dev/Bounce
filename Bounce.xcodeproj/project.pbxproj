@@ -25,13 +25,14 @@
 		7237200F1BEEAFFA00FA932A /* RxCocoa.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7237200C1BEEAFFA00FA932A /* RxCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		723720101BEEAFFA00FA932A /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7237200D1BEEAFFA00FA932A /* RxSwift.framework */; };
 		723720111BEEAFFA00FA932A /* RxSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7237200D1BEEAFFA00FA932A /* RxSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		723720151BEEB07700FA932A /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 723720131BEEB07700FA932A /* Nimble.framework */; };
-		723720161BEEB07700FA932A /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 723720141BEEB07700FA932A /* Quick.framework */; };
-		7237201B1BEEB22C00FA932A /* RxCocoa.framework.dSYM in Copy framework dSYMs */ = {isa = PBXBuildFile; fileRef = 723720191BEEB22C00FA932A /* RxCocoa.framework.dSYM */; };
-		7237201C1BEEB22C00FA932A /* RxSwift.framework.dSYM in Copy framework dSYMs */ = {isa = PBXBuildFile; fileRef = 7237201A1BEEB22C00FA932A /* RxSwift.framework.dSYM */; };
 		7237201F1BEEC10600FA932A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7237201E1BEEC10600FA932A /* ViewController.swift */; };
 		723720231BEEC15B00FA932A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 723720221BEEC15B00FA932A /* Assets.xcassets */; };
 		723720261BEEC18A00FA932A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 723720251BEEC18A00FA932A /* Main.storyboard */; };
+		723720361BEECB2E00FA932A /* NetworkControllerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 723720351BEECB2E00FA932A /* NetworkControllerSpec.swift */; };
+		7237203F1BEED65C00FA932A /* RxCocoa.framework.dSYM in Copy framework dSYMs */ = {isa = PBXBuildFile; fileRef = 7237203D1BEED65C00FA932A /* RxCocoa.framework.dSYM */; };
+		723720401BEED65C00FA932A /* RxSwift.framework.dSYM in Copy framework dSYMs */ = {isa = PBXBuildFile; fileRef = 7237203E1BEED65C00FA932A /* RxSwift.framework.dSYM */; };
+		723720451BEED6D400FA932A /* Nimble.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 723720431BEED6D400FA932A /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		723720461BEED6D400FA932A /* Quick.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 723720441BEED6D400FA932A /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		723DBCC41BEE985D00016513 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 723DBCC31BEE985D00016513 /* AppDelegate.swift */; };
 		723DBCD61BEE985D00016513 /* BounceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 723DBCD51BEE985D00016513 /* BounceTests.swift */; };
 		FA062BF81BEFFAB900316585 /* Bucket.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA062BF71BEFFAB900316585 /* Bucket.swift */; };
@@ -63,16 +64,27 @@
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		723720181BEEB17300FA932A /* Copy framework dSYMs */ = {
+		723720381BEED5EF00FA932A /* Copy framework dSYMs */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 16;
 			files = (
-				7237201B1BEEB22C00FA932A /* RxCocoa.framework.dSYM in Copy framework dSYMs */,
-				7237201C1BEEB22C00FA932A /* RxSwift.framework.dSYM in Copy framework dSYMs */,
+				7237203F1BEED65C00FA932A /* RxCocoa.framework.dSYM in Copy framework dSYMs */,
+				723720401BEED65C00FA932A /* RxSwift.framework.dSYM in Copy framework dSYMs */,
 			);
 			name = "Copy framework dSYMs";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		723720421BEED6AD00FA932A /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				723720451BEED6D400FA932A /* Nimble.framework in CopyFiles */,
+				723720461BEED6D400FA932A /* Quick.framework in CopyFiles */,
+			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -94,18 +106,18 @@
 		2DBA1F93B1A4DFD8FE3EA9A7 /* UserType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserType.swift; sourceTree = "<group>"; };
 		7237200C1BEEAFFA00FA932A /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/Mac/RxCocoa.framework; sourceTree = "<group>"; };
 		7237200D1BEEAFFA00FA932A /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/Mac/RxSwift.framework; sourceTree = "<group>"; };
-		723720131BEEB07700FA932A /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/Mac/Nimble.framework; sourceTree = "<group>"; };
-		723720141BEEB07700FA932A /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/Mac/Quick.framework; sourceTree = "<group>"; };
-		723720191BEEB22C00FA932A /* RxCocoa.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = RxCocoa.framework.dSYM; path = Carthage/Build/Mac/RxCocoa.framework.dSYM; sourceTree = "<group>"; };
-		7237201A1BEEB22C00FA932A /* RxSwift.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = RxSwift.framework.dSYM; path = Carthage/Build/Mac/RxSwift.framework.dSYM; sourceTree = "<group>"; };
 		7237201E1BEEC10600FA932A /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = View/Controllers/ViewController.swift; sourceTree = "<group>"; };
 		723720221BEEC15B00FA932A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = Resources/Assets.xcassets; sourceTree = "<group>"; };
 		723720251BEEC18A00FA932A /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Resources/Storyboards/Main.storyboard; sourceTree = "<group>"; };
 		723720281BEEC1A000FA932A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = "Resources/Other-Sources/Info.plist"; sourceTree = "<group>"; };
+		723720351BEECB2E00FA932A /* NetworkControllerSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkControllerSpec.swift; sourceTree = "<group>"; };
+		7237203D1BEED65C00FA932A /* RxCocoa.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = RxCocoa.framework.dSYM; path = Carthage/Build/Mac/RxCocoa.framework.dSYM; sourceTree = "<group>"; };
+		7237203E1BEED65C00FA932A /* RxSwift.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = RxSwift.framework.dSYM; path = Carthage/Build/Mac/RxSwift.framework.dSYM; sourceTree = "<group>"; };
+		723720431BEED6D400FA932A /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/Mac/Nimble.framework; sourceTree = "<group>"; };
+		723720441BEED6D400FA932A /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/Mac/Quick.framework; sourceTree = "<group>"; };
 		723DBCC01BEE985C00016513 /* Bounce.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bounce.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		723DBCC31BEE985D00016513 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		723DBCD11BEE985D00016513 /* BounceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BounceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		723DBCD51BEE985D00016513 /* BounceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BounceTests.swift; sourceTree = "<group>"; };
 		723DBCD71BEE985D00016513 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FA062BF71BEFFAB900316585 /* Bucket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bucket.swift; sourceTree = "<group>"; };
 		FA062BF91BEFFDEB00316585 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
@@ -127,8 +139,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				723720151BEEB07700FA932A /* Nimble.framework in Frameworks */,
-				723720161BEEB07700FA932A /* Quick.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,8 +148,8 @@
 		723720171BEEB0CE00FA932A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				723720131BEEB07700FA932A /* Nimble.framework */,
-				723720141BEEB07700FA932A /* Quick.framework */,
+				723720431BEED6D400FA932A /* Nimble.framework */,
+				723720441BEED6D400FA932A /* Quick.framework */,
 				7237200C1BEEAFFA00FA932A /* RxCocoa.framework */,
 				7237200D1BEEAFFA00FA932A /* RxSwift.framework */,
 			);
@@ -149,8 +159,8 @@
 		7237201D1BEEB23600FA932A /* dSYMs */ = {
 			isa = PBXGroup;
 			children = (
-				723720191BEEB22C00FA932A /* RxCocoa.framework.dSYM */,
-				7237201A1BEEB22C00FA932A /* RxSwift.framework.dSYM */,
+				7237203D1BEED65C00FA932A /* RxCocoa.framework.dSYM */,
+				7237203E1BEED65C00FA932A /* RxSwift.framework.dSYM */,
 			);
 			name = dSYMs;
 			sourceTree = "<group>";
@@ -273,6 +283,14 @@
 			name = Protocols;
 			sourceTree = "<group>";
 		};
+		723720371BEECC2900FA932A /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				723720351BEECB2E00FA932A /* NetworkControllerSpec.swift */,
+			);
+			name = Network;
+			sourceTree = "<group>";
+		};
 		723DBCB71BEE985C00016513 = {
 			isa = PBXGroup;
 			children = (
@@ -316,8 +334,8 @@
 		723DBCD41BEE985D00016513 /* BounceTests */ = {
 			isa = PBXGroup;
 			children = (
-				723DBCD51BEE985D00016513 /* BounceTests.swift */,
 				723DBCD71BEE985D00016513 /* Info.plist */,
+				723720371BEECC2900FA932A /* Network */,
 			);
 			path = BounceTests;
 			sourceTree = "<group>";
@@ -335,6 +353,7 @@
 				CDBCF4A5E6D8941956807963 /* Warn for TODO and FIXME comments */,
 				801B3ECE6326DEAF385C150F /* Set version number */,
 				723720121BEEAFFA00FA932A /* Embed Frameworks */,
+				723720381BEED5EF00FA932A /* Copy framework dSYMs */,
 			);
 			buildRules = (
 			);
@@ -352,7 +371,7 @@
 				723DBCCD1BEE985D00016513 /* Sources */,
 				723DBCCE1BEE985D00016513 /* Frameworks */,
 				723DBCCF1BEE985D00016513 /* Resources */,
-				723720181BEEB17300FA932A /* Copy framework dSYMs */,
+				723720421BEED6AD00FA932A /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -484,7 +503,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				723DBCD61BEE985D00016513 /* BounceTests.swift in Sources */,
+				723720361BEECB2E00FA932A /* NetworkControllerSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -648,6 +667,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -657,6 +677,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.medleycrewllc.BounceTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Bounce.app/Contents/MacOS/Bounce";
 			};
 			name = Debug;
@@ -665,6 +687,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -674,6 +697,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.medleycrewllc.BounceTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Bounce.app/Contents/MacOS/Bounce";
 			};
 			name = Release;

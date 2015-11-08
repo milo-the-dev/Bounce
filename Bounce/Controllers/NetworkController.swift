@@ -12,5 +12,15 @@ class NetworkController {
         case ClientSecret = "d59ef819b1b7eec961be47e540bbb25cc792cc622c785bbf2780e0b3bd7659e1"
         case ClientAccessToken = "2517564562baea3d8df083ef5c60b0f4ca8d6a802857ff82329b112808977b77"
     }
+    
+    private let session: NSURLSession
+    
+    init(session: NSURLSession = NSURLSession.sharedSession()) {
+        self.session = session
+    }
+    
+    func fetchShots() -> NSData? {
+        return nil
+    }
 
 }

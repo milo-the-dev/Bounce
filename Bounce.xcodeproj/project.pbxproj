@@ -28,7 +28,6 @@
 		7237201F1BEEC10600FA932A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7237201E1BEEC10600FA932A /* ViewController.swift */; };
 		723720231BEEC15B00FA932A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 723720221BEEC15B00FA932A /* Assets.xcassets */; };
 		723720261BEEC18A00FA932A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 723720251BEEC18A00FA932A /* Main.storyboard */; };
-		723720361BEECB2E00FA932A /* NetworkControllerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 723720351BEECB2E00FA932A /* NetworkControllerSpec.swift */; };
 		7237203F1BEED65C00FA932A /* RxCocoa.framework.dSYM in Copy framework dSYMs */ = {isa = PBXBuildFile; fileRef = 7237203D1BEED65C00FA932A /* RxCocoa.framework.dSYM */; };
 		723720401BEED65C00FA932A /* RxSwift.framework.dSYM in Copy framework dSYMs */ = {isa = PBXBuildFile; fileRef = 7237203E1BEED65C00FA932A /* RxSwift.framework.dSYM */; };
 		723720451BEED6D400FA932A /* Nimble.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 723720431BEED6D400FA932A /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -42,7 +41,11 @@
 		72D5388C1BEFF75700F9F147 /* SwiftyJSON.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 72D5388A1BEFF75700F9F147 /* SwiftyJSON.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		72D5388E1BEFF76E00F9F147 /* SwiftyJSON.framework.dSYM in Copy framework dSYMs */ = {isa = PBXBuildFile; fileRef = 72D5388D1BEFF76E00F9F147 /* SwiftyJSON.framework.dSYM */; };
 		72D538901BEFF8AB00F9F147 /* JSONConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72D5388F1BEFF8AB00F9F147 /* JSONConverter.swift */; };
-		72D538941BEFF9F900F9F147 /* JSONConverterSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72D538931BEFF9F900F9F147 /* JSONConverterSpec.swift */; };
+		72D538971BF0072800F9F147 /* testBucket.json in Resources */ = {isa = PBXBuildFile; fileRef = 72D538961BF0072800F9F147 /* testBucket.json */; };
+		72D538991BF0078500F9F147 /* JSONConverterSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72D538981BF0078500F9F147 /* JSONConverterSpec.swift */; };
+		72D5389B1BF0079900F9F147 /* NetworkControllerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72D5389A1BF0079900F9F147 /* NetworkControllerSpec.swift */; };
+		72D5389D1BF007F900F9F147 /* testShots.json in Resources */ = {isa = PBXBuildFile; fileRef = 72D5389C1BF007F900F9F147 /* testShots.json */; };
+		72D5389F1BF00EE800F9F147 /* testAttachments.json in Resources */ = {isa = PBXBuildFile; fileRef = 72D5389E1BF00EE800F9F147 /* testAttachments.json */; };
 		9451F72CE8FF63FCEEDD0BA9 /* NetworkController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9451FE2CED13774E2259F3A8 /* NetworkController.swift */; };
 /* End PBXBuildFile section */
 
@@ -117,7 +120,6 @@
 		723720221BEEC15B00FA932A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = Resources/Assets.xcassets; sourceTree = "<group>"; };
 		723720251BEEC18A00FA932A /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Resources/Storyboards/Main.storyboard; sourceTree = "<group>"; };
 		723720281BEEC1A000FA932A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = "Resources/Other-Sources/Info.plist"; sourceTree = "<group>"; };
-		723720351BEECB2E00FA932A /* NetworkControllerSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkControllerSpec.swift; sourceTree = "<group>"; };
 		7237203D1BEED65C00FA932A /* RxCocoa.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = RxCocoa.framework.dSYM; path = Carthage/Build/Mac/RxCocoa.framework.dSYM; sourceTree = "<group>"; };
 		7237203E1BEED65C00FA932A /* RxSwift.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = RxSwift.framework.dSYM; path = Carthage/Build/Mac/RxSwift.framework.dSYM; sourceTree = "<group>"; };
 		723720431BEED6D400FA932A /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/Mac/Nimble.framework; sourceTree = "<group>"; };
@@ -132,7 +134,11 @@
 		72D5388A1BEFF75700F9F147 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/Mac/SwiftyJSON.framework; sourceTree = "<group>"; };
 		72D5388D1BEFF76E00F9F147 /* SwiftyJSON.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = SwiftyJSON.framework.dSYM; path = Carthage/Build/Mac/SwiftyJSON.framework.dSYM; sourceTree = "<group>"; };
 		72D5388F1BEFF8AB00F9F147 /* JSONConverter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JSONConverter.swift; path = Support/JSONConverter.swift; sourceTree = "<group>"; };
-		72D538931BEFF9F900F9F147 /* JSONConverterSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONConverterSpec.swift; sourceTree = "<group>"; };
+		72D538961BF0072800F9F147 /* testBucket.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = testBucket.json; path = JSONConverter/testBucket.json; sourceTree = "<group>"; };
+		72D538981BF0078500F9F147 /* JSONConverterSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JSONConverterSpec.swift; path = JSONConverter/JSONConverterSpec.swift; sourceTree = "<group>"; };
+		72D5389A1BF0079900F9F147 /* NetworkControllerSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NetworkControllerSpec.swift; path = Network/NetworkControllerSpec.swift; sourceTree = "<group>"; };
+		72D5389C1BF007F900F9F147 /* testShots.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = testShots.json; path = JSONConverter/testShots.json; sourceTree = "<group>"; };
+		72D5389E1BF00EE800F9F147 /* testAttachments.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = testAttachments.json; path = JSONConverter/testAttachments.json; sourceTree = "<group>"; };
 		9451FE2CED13774E2259F3A8 /* NetworkController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NetworkController.swift; path = Controllers/NetworkController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -301,7 +307,7 @@
 		723720371BEECC2900FA932A /* Network */ = {
 			isa = PBXGroup;
 			children = (
-				723720351BEECB2E00FA932A /* NetworkControllerSpec.swift */,
+				72D5389A1BF0079900F9F147 /* NetworkControllerSpec.swift */,
 			);
 			name = Network;
 			sourceTree = "<group>";
@@ -351,9 +357,20 @@
 			children = (
 				723DBCD71BEE985D00016513 /* Info.plist */,
 				723720371BEECC2900FA932A /* Network */,
-				72D538931BEFF9F900F9F147 /* JSONConverterSpec.swift */,
+				72D538951BF006B900F9F147 /* JSONConverter */,
 			);
 			path = BounceTests;
+			sourceTree = "<group>";
+		};
+		72D538951BF006B900F9F147 /* JSONConverter */ = {
+			isa = PBXGroup;
+			children = (
+				72D538981BF0078500F9F147 /* JSONConverterSpec.swift */,
+				72D538961BF0072800F9F147 /* testBucket.json */,
+				72D5389C1BF007F900F9F147 /* testShots.json */,
+				72D5389E1BF00EE800F9F147 /* testAttachments.json */,
+			);
+			name = JSONConverter;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -451,6 +468,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				72D538971BF0072800F9F147 /* testBucket.json in Resources */,
+				72D5389D1BF007F900F9F147 /* testShots.json in Resources */,
+				72D5389F1BF00EE800F9F147 /* testAttachments.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -520,8 +540,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				723720361BEECB2E00FA932A /* NetworkControllerSpec.swift in Sources */,
-				72D538941BEFF9F900F9F147 /* JSONConverterSpec.swift in Sources */,
+				72D538991BF0078500F9F147 /* JSONConverterSpec.swift in Sources */,
+				72D5389B1BF0079900F9F147 /* NetworkControllerSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

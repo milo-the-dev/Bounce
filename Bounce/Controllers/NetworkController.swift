@@ -13,6 +13,19 @@ private enum DribbbleAccessToken: String {
     case ClientAccessToken = "2517564562baea3d8df083ef5c60b0f4ca8d6a802857ff82329b112808977b77"
 }
 
+protocol Endpoint {
+    var path: String { get }
+}
+
+private enum DribbbleAPI {
+    // shots
+    case Shots
+    case Attachments(shotID: Int)
+    
+    // buckets
+    case Buckets(id: Int)
+}
+
 class NetworkController {
     
     static private let hostUrl = NSURL(string: "https://api.dribbble.com/v1/")
@@ -22,14 +35,42 @@ class NetworkController {
         self.session = session
     }
     
+    // MARK: Shots
+    
     func fetchShots() -> Observable<NSData> {
         let url = NSURL(
             string: "shots?access_token=\(DribbbleAccessToken.ClientAccessToken.rawValue)",
             relativeToURL: NetworkController.hostUrl
         )
+
+        return GET(url!)
+    }
+    
+    func fetchAttachments(withShotID id: Int) -> Observable<NSData> {
+        let url = NSURL(
+            string: "shots/\(id)/attachments?access_token=\(DribbbleAccessToken.ClientAccessToken.rawValue)",
+            relativeToURL: NetworkController.hostUrl
+        )
         
-        let request = NSURLRequest(URL: url!)
-        
+        return GET(url!)
+    }
+    
+    // MARK: Buckets
+
+    func fetchBucket(withID id: Int) -> Observable<NSData> {
+        let url = NSURL(
+            string: "buckets/\(id)?access_token=\(DribbbleAccessToken.ClientAccessToken.rawValue)",
+            relativeToURL: NetworkController.hostUrl
+        )
+
+        return GET(url!)
+    }
+
+    
+    // MARK: Private methods
+    
+    private func GET(url: NSURL) -> Observable<NSData> {
+        let request = NSURLRequest(URL: url)
         return session.rx_data(request)
     }
 

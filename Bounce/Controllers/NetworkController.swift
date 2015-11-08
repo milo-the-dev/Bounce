@@ -15,6 +15,7 @@ class NetworkController {
         case ClientAccessToken = "2517564562baea3d8df083ef5c60b0f4ca8d6a802857ff82329b112808977b77"
     }
     
+    static let hostUrl = NSURL(string: "https://api.dribbble.com/v1/")
     private let session: NSURLSession
     
     init(session: NSURLSession = NSURLSession.sharedSession()) {
@@ -22,8 +23,13 @@ class NetworkController {
     }
     
     func fetchShots() -> Observable<NSData> {
-        let url = NSURL(string: "https://api.dribbble.com/v1/shots?access_token=\(DribbbleAccessToken.ClientAccessToken.rawValue)")!
-        let request = NSURLRequest(URL: url)
+        let url = NSURL(
+            string: "shots?access_token=\(DribbbleAccessToken.ClientAccessToken.rawValue)",
+            relativeToURL: NetworkController.hostUrl
+        )
+        
+        let request = NSURLRequest(URL: url!)
+        
         return session
             .rx_data(request)
     }

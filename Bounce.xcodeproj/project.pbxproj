@@ -41,6 +41,8 @@
 		72D5388B1BEFF75700F9F147 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72D5388A1BEFF75700F9F147 /* SwiftyJSON.framework */; };
 		72D5388C1BEFF75700F9F147 /* SwiftyJSON.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 72D5388A1BEFF75700F9F147 /* SwiftyJSON.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		72D5388E1BEFF76E00F9F147 /* SwiftyJSON.framework.dSYM in Copy framework dSYMs */ = {isa = PBXBuildFile; fileRef = 72D5388D1BEFF76E00F9F147 /* SwiftyJSON.framework.dSYM */; };
+		72D538901BEFF8AB00F9F147 /* JSONConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72D5388F1BEFF8AB00F9F147 /* JSONConverter.swift */; };
+		72D538941BEFF9F900F9F147 /* JSONConverterSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72D538931BEFF9F900F9F147 /* JSONConverterSpec.swift */; };
 		9451F72CE8FF63FCEEDD0BA9 /* NetworkController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9451FE2CED13774E2259F3A8 /* NetworkController.swift */; };
 /* End PBXBuildFile section */
 
@@ -129,6 +131,8 @@
 		FA062BFB1BF0011700316585 /* Links.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Links.swift; sourceTree = "<group>"; };
 		72D5388A1BEFF75700F9F147 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/Mac/SwiftyJSON.framework; sourceTree = "<group>"; };
 		72D5388D1BEFF76E00F9F147 /* SwiftyJSON.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = SwiftyJSON.framework.dSYM; path = Carthage/Build/Mac/SwiftyJSON.framework.dSYM; sourceTree = "<group>"; };
+		72D5388F1BEFF8AB00F9F147 /* JSONConverter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JSONConverter.swift; path = Support/JSONConverter.swift; sourceTree = "<group>"; };
+		72D538931BEFF9F900F9F147 /* JSONConverterSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONConverterSpec.swift; sourceTree = "<group>"; };
 		9451FE2CED13774E2259F3A8 /* NetworkController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NetworkController.swift; path = Controllers/NetworkController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -228,6 +232,7 @@
 		7237202C1BEEC25D00FA932A /* Support */ = {
 			isa = PBXGroup;
 			children = (
+				72D5388F1BEFF8AB00F9F147 /* JSONConverter.swift */,
 			);
 			name = Support;
 			sourceTree = "<group>";
@@ -346,6 +351,7 @@
 			children = (
 				723DBCD71BEE985D00016513 /* Info.plist */,
 				723720371BEECC2900FA932A /* Network */,
+				72D538931BEFF9F900F9F147 /* JSONConverterSpec.swift */,
 			);
 			path = BounceTests;
 			sourceTree = "<group>";
@@ -488,6 +494,7 @@
 			files = (
 				FA062BFA1BEFFDEB00316585 /* User.swift in Sources */,
 				FA062BF81BEFFAB900316585 /* Bucket.swift in Sources */,
+				72D538901BEFF8AB00F9F147 /* JSONConverter.swift in Sources */,
 				7237201F1BEEC10600FA932A /* ViewController.swift in Sources */,
 				723DBCC41BEE985D00016513 /* AppDelegate.swift in Sources */,
 				FA062BFC1BF0011700316585 /* Links.swift in Sources */,
@@ -514,6 +521,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				723720361BEECB2E00FA932A /* NetworkControllerSpec.swift in Sources */,
+				72D538941BEFF9F900F9F147 /* JSONConverterSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

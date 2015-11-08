@@ -37,6 +37,7 @@
 		FA062BF81BEFFAB900316585 /* Bucket.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA062BF71BEFFAB900316585 /* Bucket.swift */; };
 		FA062BFA1BEFFDEB00316585 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA062BF91BEFFDEB00316585 /* User.swift */; };
 		FA062BFC1BF0011700316585 /* Links.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA062BFB1BF0011700316585 /* Links.swift */; };
+		9451F72CE8FF63FCEEDD0BA9 /* NetworkController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9451FE2CED13774E2259F3A8 /* NetworkController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -109,6 +110,7 @@
 		FA062BF71BEFFAB900316585 /* Bucket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bucket.swift; sourceTree = "<group>"; };
 		FA062BF91BEFFDEB00316585 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		FA062BFB1BF0011700316585 /* Links.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Links.swift; sourceTree = "<group>"; };
+		9451FE2CED13774E2259F3A8 /* NetworkController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NetworkController.swift; path = Controllers/NetworkController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -229,13 +231,6 @@
 			name = Model;
 			sourceTree = "<group>";
 		};
-		7237202E1BEEC26F00FA932A /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = View;
-			sourceTree = "<group>";
-		};
 		7237202F1BEEC27B00FA932A /* View Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -246,6 +241,7 @@
 		723720301BEEC28D00FA932A /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				9451FE2CED13774E2259F3A8 /* NetworkController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -480,6 +476,7 @@
 				2DBA16649874C1CBDD4C4728 /* UserType.swift in Sources */,
 				2DBA13EE23C431BB899664B0 /* LikeType.swift in Sources */,
 				2DBA1F1C5258BF518845711A /* TypedUser.swift in Sources */,
+				9451F72CE8FF63FCEEDD0BA9 /* NetworkController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -46,7 +46,9 @@
 		72D5389B1BF0079900F9F147 /* NetworkControllerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72D5389A1BF0079900F9F147 /* NetworkControllerSpec.swift */; };
 		72D5389D1BF007F900F9F147 /* testShots.json in Resources */ = {isa = PBXBuildFile; fileRef = 72D5389C1BF007F900F9F147 /* testShots.json */; };
 		72D5389F1BF00EE800F9F147 /* testAttachments.json in Resources */ = {isa = PBXBuildFile; fileRef = 72D5389E1BF00EE800F9F147 /* testAttachments.json */; };
-		9451F72CE8FF63FCEEDD0BA9 /* NetworkController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9451FE2CED13774E2259F3A8 /* NetworkController.swift */; };
+		72D538A11BF014DE00F9F147 /* NetworkController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72D538A01BF014DE00F9F147 /* NetworkController.swift */; };
+		72D538A41BF0150D00F9F147 /* DribbbleAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72D538A31BF0150D00F9F147 /* DribbbleAPI.swift */; };
+		72D538A61BF020D900F9F147 /* DribbbleAPISpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72D538A51BF020D900F9F147 /* DribbbleAPISpec.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -139,7 +141,9 @@
 		72D5389A1BF0079900F9F147 /* NetworkControllerSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NetworkControllerSpec.swift; path = Network/NetworkControllerSpec.swift; sourceTree = "<group>"; };
 		72D5389C1BF007F900F9F147 /* testShots.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = testShots.json; path = JSONConverter/testShots.json; sourceTree = "<group>"; };
 		72D5389E1BF00EE800F9F147 /* testAttachments.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = testAttachments.json; path = JSONConverter/testAttachments.json; sourceTree = "<group>"; };
-		9451FE2CED13774E2259F3A8 /* NetworkController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NetworkController.swift; path = Controllers/NetworkController.swift; sourceTree = "<group>"; };
+		72D538A01BF014DE00F9F147 /* NetworkController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NetworkController.swift; path = Controllers/Network/NetworkController.swift; sourceTree = "<group>"; };
+		72D538A31BF0150D00F9F147 /* DribbbleAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DribbbleAPI.swift; path = Controllers/Network/DribbbleAPI.swift; sourceTree = "<group>"; };
+		72D538A51BF020D900F9F147 /* DribbbleAPISpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DribbbleAPISpec.swift; path = Network/DribbbleAPISpec.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -272,7 +276,7 @@
 		723720301BEEC28D00FA932A /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				9451FE2CED13774E2259F3A8 /* NetworkController.swift */,
+				72D538A21BF014E200F9F147 /* Network */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -308,6 +312,7 @@
 			isa = PBXGroup;
 			children = (
 				72D5389A1BF0079900F9F147 /* NetworkControllerSpec.swift */,
+				72D538A51BF020D900F9F147 /* DribbbleAPISpec.swift */,
 			);
 			name = Network;
 			sourceTree = "<group>";
@@ -371,6 +376,15 @@
 				72D5389E1BF00EE800F9F147 /* testAttachments.json */,
 			);
 			name = JSONConverter;
+			sourceTree = "<group>";
+		};
+		72D538A21BF014E200F9F147 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				72D538A01BF014DE00F9F147 /* NetworkController.swift */,
+				72D538A31BF0150D00F9F147 /* DribbbleAPI.swift */,
+			);
+			name = Network;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -533,6 +547,11 @@
 				2DBA13EE23C431BB899664B0 /* LikeType.swift in Sources */,
 				2DBA1F1C5258BF518845711A /* TypedUser.swift in Sources */,
 				9451F72CE8FF63FCEEDD0BA9 /* NetworkController.swift in Sources */,
+				72D538A41BF0150D00F9F147 /* DribbbleAPI.swift in Sources */,
+				72D538A11BF014DE00F9F147 /* NetworkController.swift in Sources */,
+				72D538901BEFF8AB00F9F147 /* JSONConverter.swift in Sources */,
+				7237201F1BEEC10600FA932A /* ViewController.swift in Sources */,
+				723DBCC41BEE985D00016513 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -542,6 +561,7 @@
 			files = (
 				72D538991BF0078500F9F147 /* JSONConverterSpec.swift in Sources */,
 				72D5389B1BF0079900F9F147 /* NetworkControllerSpec.swift in Sources */,
+				72D538A61BF020D900F9F147 /* DribbbleAPISpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

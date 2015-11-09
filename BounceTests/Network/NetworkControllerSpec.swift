@@ -26,16 +26,20 @@ class NetworkControllerSpec: QuickSpec {
             networkController = nil
         }
         
-        describe("GET requests") {
+        describe("network controller generates proper urls") {
+
+            it("generates proper shots request") {
+
+            }
             
             it("fetch shots should not return nil") {
                 var dataUnderTest: NSData?
-                
+
                 let subscription = networkController.fetchShots()
                     .subscribeNext { data in dataUnderTest = data }
-                
+
                 expect(dataUnderTest).toEventuallyNot(beNil(), timeout: 5)
-                
+
                 subscription.dispose()
             }
             

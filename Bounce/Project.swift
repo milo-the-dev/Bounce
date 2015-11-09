@@ -9,8 +9,7 @@ class Project {
     private (set) var updatedAt: NSDate
     private (set) var user: User
 
-    init(id: Int, name: String, description: String, shotsCount: Int = 0, createdAt: NSDate,
-         updatedAt: NSDate, user: User) {
+    init(id: Int, name: String, description: String, shotsCount: Int = 0, createdAt: NSDate, updatedAt: NSDate, user: User) {
         self.id = id
         self.name = name
         self.description = description

@@ -1,7 +1,7 @@
 import Foundation
 
 
-class Rebound: UserTyped {
+class Rebound: TypedUser {
     private (set) var id: Int
     private (set) var name: String
     private (set) var username: String

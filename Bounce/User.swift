@@ -1,7 +1,7 @@
 import Foundation
 
 
-class User : UserTyped {
+class User: TypedUser {
     private (set) var id: Int
     private (set) var name: String
     private (set) var username: String

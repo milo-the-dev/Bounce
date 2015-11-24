@@ -95,12 +95,12 @@
 		7237200D1BEEAFFA00FA932A /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/Mac/RxSwift.framework; sourceTree = "<group>"; };
 		723720131BEEB07700FA932A /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/Mac/Nimble.framework; sourceTree = "<group>"; };
 		723720141BEEB07700FA932A /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/Mac/Quick.framework; sourceTree = "<group>"; };
-		723720191BEEB22C00FA932A /* RxCocoa.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = RxCocoa.framework.dSYM; path = Carthage/Build/Mac/RxCocoa.framework.dSYM; sourceTree = "<group>"; };
-		7237201A1BEEB22C00FA932A /* RxSwift.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = RxSwift.framework.dSYM; path = Carthage/Build/Mac/RxSwift.framework.dSYM; sourceTree = "<group>"; };
-		7237201E1BEEC10600FA932A /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = View/Controllers/ViewController.swift; sourceTree = "<group>"; };
-		723720221BEEC15B00FA932A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = Resources/Assets.xcassets; sourceTree = "<group>"; };
-		723720251BEEC18A00FA932A /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Resources/Storyboards/Main.storyboard; sourceTree = "<group>"; };
-		723720281BEEC1A000FA932A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = "Resources/Other-Sources/Info.plist"; sourceTree = "<group>"; };
+		723720191BEEB22C00FA932A /* RxCocoa.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; path = RxCocoa.framework.dSYM; sourceTree = "<group>"; };
+		7237201A1BEEB22C00FA932A /* RxSwift.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; path = RxSwift.framework.dSYM; sourceTree = "<group>"; };
+		7237201E1BEEC10600FA932A /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		723720221BEEC15B00FA932A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		723720251BEEC18A00FA932A /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		723720281BEEC1A000FA932A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		723DBCC01BEE985C00016513 /* Bounce.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bounce.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		723DBCC31BEE985D00016513 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		723DBCD11BEE985D00016513 /* BounceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BounceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -150,7 +150,7 @@
 				723720191BEEB22C00FA932A /* RxCocoa.framework.dSYM */,
 				7237201A1BEEB22C00FA932A /* RxSwift.framework.dSYM */,
 			);
-			name = dSYMs;
+			path = dSYMs;
 			sourceTree = "<group>";
 		};
 		723720201BEEC10B00FA932A /* View */ = {
@@ -158,7 +158,7 @@
 			children = (
 				723720211BEEC11400FA932A /* Controllers */,
 			);
-			name = View;
+			path = View;
 			sourceTree = "<group>";
 		};
 		723720211BEEC11400FA932A /* Controllers */ = {
@@ -166,7 +166,7 @@
 			children = (
 				7237201E1BEEC10600FA932A /* ViewController.swift */,
 			);
-			name = Controllers;
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 		723720241BEEC16700FA932A /* Resources */ = {
@@ -177,7 +177,7 @@
 				723720271BEEC18E00FA932A /* Storyboards */,
 				723720221BEEC15B00FA932A /* Assets.xcassets */,
 			);
-			name = Resources;
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		723720271BEEC18E00FA932A /* Storyboards */ = {
@@ -185,7 +185,7 @@
 			children = (
 				723720251BEEC18A00FA932A /* Main.storyboard */,
 			);
-			name = Storyboards;
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 		7237202A1BEEC1A500FA932A /* Other-Sources */ = {
@@ -193,72 +193,72 @@
 			children = (
 				723720281BEEC1A000FA932A /* Info.plist */,
 			);
-			name = "Other-Sources";
+			path = "Other-Sources";
 			sourceTree = "<group>";
 		};
 		7237202B1BEEC24A00FA932A /* Nibs */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			name = Nibs;
+			path = Nibs;
 			sourceTree = "<group>";
 		};
 		7237202C1BEEC25D00FA932A /* Support */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			name = Support;
+			path = Support;
 			sourceTree = "<group>";
 		};
 		7237202D1BEEC26A00FA932A /* Model */ = {
 			isa = PBXGroup;
 			children = (
 				FA062BF71BEFFAB900316585 /* Bucket.swift */,
-				FA062BF91BEFFDEB00316585 /* User.swift */,
-				FA062BFB1BF0011700316585 /* Links.swift */,
-				2DBA146075AE6533143254E4 /* Shot.swift */,
-				2DBA1C1AE84171A14C153059 /* Project.swift */,
-				2DBA1A13FB8A9195A30268BD /* Images.swift */,
-				2DBA18A4A57D5602EE03B22A /* ShotAttachment.swift */,
 				2DBA1CF60C9C35AB5806477E /* Comment.swift */,
+				2DBA1A13FB8A9195A30268BD /* Images.swift */,
 				2DBA1CA095B02B6834395217 /* Like.swift */,
+				FA062BFB1BF0011700316585 /* Links.swift */,
+				2DBA1C1AE84171A14C153059 /* Project.swift */,
 				2DBA1E66435AC25DDDB388B1 /* Rebound.swift */,
+				2DBA146075AE6533143254E4 /* Shot.swift */,
+				2DBA18A4A57D5602EE03B22A /* ShotAttachment.swift */,
 				2DBA17F90CFD112EC76D3E1C /* Team.swift */,
+				FA062BF91BEFFDEB00316585 /* User.swift */,
 			);
-			name = Model;
+			path = Model;
 			sourceTree = "<group>";
 		};
 		7237202F1BEEC27B00FA932A /* View Model */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			name = "View Model";
+			path = "View Model";
 			sourceTree = "<group>";
 		};
 		723720301BEEC28D00FA932A /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			name = Controllers;
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 		723720311BEEC29C00FA932A /* Enums */ = {
 			isa = PBXGroup;
 			children = (
-				2DBA13419E6EB290AD0CA6C5 /* ShotType.swift */,
-				2DBA1C517101DF36823BEDDF /* TimeFrame.swift */,
-				2DBA14D44A0F65A3A01FC02D /* SortType.swift */,
-				2DBA1F93B1A4DFD8FE3EA9A7 /* UserType.swift */,
 				2DBA1209DB2EDA75B5DB935C /* LikeType.swift */,
+				2DBA13419E6EB290AD0CA6C5 /* ShotType.swift */,
+				2DBA14D44A0F65A3A01FC02D /* SortType.swift */,
+				2DBA1C517101DF36823BEDDF /* TimeFrame.swift */,
+				2DBA1F93B1A4DFD8FE3EA9A7 /* UserType.swift */,
 			);
-			name = Enums;
+			path = Enums;
 			sourceTree = "<group>";
 		};
 		723720321BEEC2A100FA932A /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			name = Extensions;
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		723720331BEEC2A800FA932A /* Protocols */ = {
@@ -266,7 +266,7 @@
 			children = (
 				2DBA1E8D5A90F35977FD2FDD /* TypedUser.swift */,
 			);
-			name = Protocols;
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 		723DBCB71BEE985C00016513 = {
@@ -274,9 +274,9 @@
 			children = (
 				723DBCC21BEE985C00016513 /* Bounce */,
 				723DBCD41BEE985D00016513 /* BounceTests */,
-				7237201D1BEEB23600FA932A /* dSYMs */,
 				723720171BEEB0CE00FA932A /* Frameworks */,
 				723DBCC11BEE985C00016513 /* Products */,
+				7237201D1BEEB23600FA932A /* dSYMs */,
 			);
 			indentWidth = 4;
 			sourceTree = "<group>";
@@ -295,16 +295,16 @@
 		723DBCC21BEE985C00016513 /* Bounce */ = {
 			isa = PBXGroup;
 			children = (
-				723DBCC31BEE985D00016513 /* AppDelegate.swift */,
 				723720301BEEC28D00FA932A /* Controllers */,
 				723720311BEEC29C00FA932A /* Enums */,
 				723720321BEEC2A100FA932A /* Extensions */,
-				723720331BEEC2A800FA932A /* Protocols */,
 				7237202D1BEEC26A00FA932A /* Model */,
-				723720201BEEC10B00FA932A /* View */,
-				7237202F1BEEC27B00FA932A /* View Model */,
+				723720331BEEC2A800FA932A /* Protocols */,
 				723720241BEEC16700FA932A /* Resources */,
 				7237202C1BEEC25D00FA932A /* Support */,
+				723720201BEEC10B00FA932A /* View */,
+				7237202F1BEEC27B00FA932A /* View Model */,
+				723DBCC31BEE985D00016513 /* AppDelegate.swift */,
 			);
 			path = Bounce;
 			sourceTree = "<group>";

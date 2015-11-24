@@ -213,7 +213,6 @@
 		7237202D1BEEC26A00FA932A /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				7237202E1BEEC26F00FA932A /* View */,
 				FA062BF71BEFFAB900316585 /* Bucket.swift */,
 				FA062BF91BEFFDEB00316585 /* User.swift */,
 				FA062BFB1BF0011700316585 /* Links.swift */,
@@ -227,13 +226,6 @@
 				2DBA17F90CFD112EC76D3E1C /* Team.swift */,
 			);
 			name = Model;
-			sourceTree = "<group>";
-		};
-		7237202E1BEEC26F00FA932A /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = View;
 			sourceTree = "<group>";
 		};
 		7237202F1BEEC27B00FA932A /* View Model */ = {

@@ -18,5 +18,4 @@ class Project {
         self.updatedAt = updatedAt
         self.user = user
     }
-
 }

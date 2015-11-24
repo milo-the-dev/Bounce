@@ -1,5 +1,5 @@
 import Foundation
-
+import SwiftyJSON
 
 class User: TypedUser {
     private (set) var id: Int
@@ -72,5 +72,41 @@ class User: TypedUser {
     var type: UserType {
         return UserType.Player
     }
+}
 
+extension User: JSONParceable {
+    class func from(json: JSON) -> User {
+        
+        let createdAt = DateFormatter.dateFromString(json["created_at"].stringValue)
+        let updatedAt = DateFormatter.dateFromString(json["updated_at"].stringValue)
+        
+        return User(id: json["id"].intValue,
+            name: json["name"].stringValue,
+            username: json["username"].stringValue,
+            htmlUrl: json["html_url"].stringValue,
+            avatarUrl: json["avatar_url"].stringValue,
+            bio: json["bio"].stringValue,
+            location: json["location"].stringValue,
+            links: Links.from(json["links"]),
+            bucketsCount: json["buckets_count"].intValue,
+            commentsReceivedCount: json["comments_received_count"].intValue,
+            followersCount: json["followers_count"].intValue,
+            followingsCount: json["following_count"].intValue,
+            likesCount: json["likes_count"].intValue,
+            likesReceivedCount: json["likes_received_count"].intValue,
+            projectsCount: json["projects_count"].intValue,
+            reboundsReceivedCount: json["rebounds_received_count"].intValue,
+            shotsCount: json["shots_count"].intValue,
+            teamsCount: json["teams_count"].intValue,
+            canUploadShot: json["can_upload_shot"].boolValue,
+            pro: json["pro"].boolValue,
+            bucketsUrl: json["buckets_url"].stringValue,
+            followersUrl: json["followers_url"].stringValue,
+            followingUrl: json["following_url"].stringValue,
+            likesUrl: json["likes_url"].stringValue,
+            shotsUrl: json["shots_url"].stringValue,
+            teamsUrl: json["teams_url"].stringValue,
+            createdAt: createdAt,
+            updatedAt: updatedAt)
+    }
 }

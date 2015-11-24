@@ -1,11 +1,8 @@
-//
-// Created by Marlow Charite on 11/7/15.
-// Copyright (c) 2015 Marlow Charite. All rights reserved.
-//
-
 import Foundation
+
 import RxSwift
 import RxCocoa
+import SwiftyJSON
 
 class NetworkController {
     
@@ -17,25 +14,29 @@ class NetworkController {
     
     // MARK: Shots
     
-    func fetchShots() -> Observable<NSData> {
-        return GET(DribbbleAPI.Shots)
+    func fetchShots() -> Observable<[Shot]> {
+        return GET(.Shots)
+            .map { json in json.arrayValue.map(Shot.from) }
     }
     
-    func fetchAttachments(withShotID id: Int) -> Observable<NSData> {
-        return GET(DribbbleAPI.Attachments(id))
+    func fetchAttachments(withShotID id: Int) -> Observable<[ShotAttachment]> {
+        return GET(.Attachments(id))
+            .map { json in json.arrayValue.map(ShotAttachment.from) }
     }
     
     // MARK: Buckets
 
-    func fetchBucket(withID id: Int) -> Observable<NSData> {
-        return GET(DribbbleAPI.Buckets(id))
+    func fetchBucket(withID id: Int) -> Observable<Bucket> {
+        return GET(.Buckets(id))
+            .map(Bucket.from)
     }
     
     // MARK: Private methods
     
-    private func GET(route: DribbbleAPI) -> Observable<NSData> {
+    private func GET(route: DribbbleAPI) -> Observable<JSON> {
         let request = NSURLRequest(URL: route.fullURL)
         return session.rx_data(request)
+            .map(JSONConverter.convert)
     }
 
 }

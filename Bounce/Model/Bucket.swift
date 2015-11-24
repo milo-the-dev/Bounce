@@ -1,4 +1,5 @@
 import Foundation
+import SwiftyJSON
 
 class Bucket {
     private (set) var id: Int
@@ -18,5 +19,23 @@ class Bucket {
         self.createdAt = createdAt
         self.updatedAt = updatedAt
         self.user = user
+    }
+}
+
+extension Bucket: JSONParceable {
+    static func from(json: JSON) -> Bucket {
+        
+        let user = User.from(json["user"])
+        let createdAt = DateFormatter.dateFromString(json["created_at"].stringValue)
+        let updatedAt = DateFormatter.dateFromString(json["updated_at"].stringValue)
+
+        return Bucket(
+            id: json["id"].intValue,
+            name: json["name"].stringValue,
+            description: json["description"].stringValue,
+            shotsCount: json["shots_count"].intValue,
+            createdAt: createdAt,
+            updatedAt: updatedAt,
+            user: user)
     }
 }

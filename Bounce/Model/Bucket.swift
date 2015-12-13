@@ -23,7 +23,7 @@ class Bucket {
 }
 
 extension Bucket: JSONParceable {
-    static func from(json: JSON) -> Bucket {
+    class func from(json: JSON) -> Bucket {
         
         let user = User.from(json["user"])
         let createdAt = DateFormatter.dateFromString(json["created_at"].stringValue)

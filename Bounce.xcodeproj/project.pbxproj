@@ -25,15 +25,24 @@
 		7237200F1BEEAFFA00FA932A /* RxCocoa.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7237200C1BEEAFFA00FA932A /* RxCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		723720101BEEAFFA00FA932A /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7237200D1BEEAFFA00FA932A /* RxSwift.framework */; };
 		723720111BEEAFFA00FA932A /* RxSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7237200D1BEEAFFA00FA932A /* RxSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		723720151BEEB07700FA932A /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 723720131BEEB07700FA932A /* Nimble.framework */; };
-		723720161BEEB07700FA932A /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 723720141BEEB07700FA932A /* Quick.framework */; };
-		7237201B1BEEB22C00FA932A /* RxCocoa.framework.dSYM in Copy framework dSYMs */ = {isa = PBXBuildFile; fileRef = 723720191BEEB22C00FA932A /* RxCocoa.framework.dSYM */; };
-		7237201C1BEEB22C00FA932A /* RxSwift.framework.dSYM in Copy framework dSYMs */ = {isa = PBXBuildFile; fileRef = 7237201A1BEEB22C00FA932A /* RxSwift.framework.dSYM */; };
-		7237201F1BEEC10600FA932A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7237201E1BEEC10600FA932A /* ViewController.swift */; };
 		723720231BEEC15B00FA932A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 723720221BEEC15B00FA932A /* Assets.xcassets */; };
 		723720261BEEC18A00FA932A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 723720251BEEC18A00FA932A /* Main.storyboard */; };
-		723DBCC41BEE985D00016513 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 723DBCC31BEE985D00016513 /* AppDelegate.swift */; };
-		723DBCD61BEE985D00016513 /* BounceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 723DBCD51BEE985D00016513 /* BounceTests.swift */; };
+		723720451BEED6D400FA932A /* Nimble.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 723720431BEED6D400FA932A /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		723720461BEED6D400FA932A /* Quick.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 723720441BEED6D400FA932A /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		72A370211C03E3F200800221 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72A370201C03E3F200800221 /* SwiftyJSON.framework */; };
+		72A370221C03E3F200800221 /* SwiftyJSON.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 72A370201C03E3F200800221 /* SwiftyJSON.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		72D538971BF0072800F9F147 /* testBucket.json in Resources */ = {isa = PBXBuildFile; fileRef = 72D538961BF0072800F9F147 /* testBucket.json */; };
+		72D538991BF0078500F9F147 /* JSONConverterSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72D538981BF0078500F9F147 /* JSONConverterSpec.swift */; };
+		72D5389D1BF007F900F9F147 /* testShots.json in Resources */ = {isa = PBXBuildFile; fileRef = 72D5389C1BF007F900F9F147 /* testShots.json */; };
+		72D5389F1BF00EE800F9F147 /* testAttachments.json in Resources */ = {isa = PBXBuildFile; fileRef = 72D5389E1BF00EE800F9F147 /* testAttachments.json */; };
+		72D538A11BF014DE00F9F147 /* NetworkController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72D538A01BF014DE00F9F147 /* NetworkController.swift */; };
+		72D538A41BF0150D00F9F147 /* DribbbleAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72D538A31BF0150D00F9F147 /* DribbbleAPI.swift */; };
+		72D538A61BF020D900F9F147 /* DribbbleAPISpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72D538A51BF020D900F9F147 /* DribbbleAPISpec.swift */; };
+		A85BE6ED1C1DCF99004C603C /* DateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A85BE6EC1C1DCF99004C603C /* DateFormatter.swift */; };
+		A86294C61C1B029F00A1BF58 /* JSONConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72D5388F1BEFF8AB00F9F147 /* JSONConverter.swift */; };
+		A86294C71C1B029F00A1BF58 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7237201E1BEEC10600FA932A /* ViewController.swift */; };
+		A86294C81C1B029F00A1BF58 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 723DBCC31BEE985D00016513 /* AppDelegate.swift */; };
+		A8D1369B1C1B4E12008AA28E /* JSONParceable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8D1369A1C1B4E12008AA28E /* JSONParceable.swift */; };
 		FA062BF81BEFFAB900316585 /* Bucket.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA062BF71BEFFAB900316585 /* Bucket.swift */; };
 		FA062BFA1BEFFDEB00316585 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA062BF91BEFFDEB00316585 /* User.swift */; };
 		FA062BFC1BF0011700316585 /* Links.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA062BFB1BF0011700316585 /* Links.swift */; };
@@ -58,20 +67,20 @@
 			files = (
 				723720111BEEAFFA00FA932A /* RxSwift.framework in Embed Frameworks */,
 				7237200F1BEEAFFA00FA932A /* RxCocoa.framework in Embed Frameworks */,
+				72A370221C03E3F200800221 /* SwiftyJSON.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		723720181BEEB17300FA932A /* Copy framework dSYMs */ = {
+		723720421BEED6AD00FA932A /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
-			dstSubfolderSpec = 16;
+			dstSubfolderSpec = 10;
 			files = (
-				7237201B1BEEB22C00FA932A /* RxCocoa.framework.dSYM in Copy framework dSYMs */,
-				7237201C1BEEB22C00FA932A /* RxSwift.framework.dSYM in Copy framework dSYMs */,
+				723720451BEED6D400FA932A /* Nimble.framework in CopyFiles */,
+				723720461BEED6D400FA932A /* Quick.framework in CopyFiles */,
 			);
-			name = "Copy framework dSYMs";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -101,11 +110,23 @@
 		723720221BEEC15B00FA932A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		723720251BEEC18A00FA932A /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		723720281BEEC1A000FA932A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		723720431BEED6D400FA932A /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/Mac/Nimble.framework; sourceTree = "<group>"; };
+		723720441BEED6D400FA932A /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/Mac/Quick.framework; sourceTree = "<group>"; };
 		723DBCC01BEE985C00016513 /* Bounce.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bounce.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		723DBCC31BEE985D00016513 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		723DBCD11BEE985D00016513 /* BounceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BounceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		723DBCD51BEE985D00016513 /* BounceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BounceTests.swift; sourceTree = "<group>"; };
 		723DBCD71BEE985D00016513 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		72A370201C03E3F200800221 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/Mac/SwiftyJSON.framework; sourceTree = "<group>"; };
+		72D5388F1BEFF8AB00F9F147 /* JSONConverter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONConverter.swift; sourceTree = "<group>"; };
+		72D538961BF0072800F9F147 /* testBucket.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = testBucket.json; sourceTree = "<group>"; };
+		72D538981BF0078500F9F147 /* JSONConverterSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONConverterSpec.swift; sourceTree = "<group>"; };
+		72D5389C1BF007F900F9F147 /* testShots.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = testShots.json; sourceTree = "<group>"; };
+		72D5389E1BF00EE800F9F147 /* testAttachments.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = testAttachments.json; sourceTree = "<group>"; };
+		72D538A01BF014DE00F9F147 /* NetworkController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkController.swift; sourceTree = "<group>"; };
+		72D538A31BF0150D00F9F147 /* DribbbleAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DribbbleAPI.swift; sourceTree = "<group>"; };
+		72D538A51BF020D900F9F147 /* DribbbleAPISpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DribbbleAPISpec.swift; sourceTree = "<group>"; };
+		A85BE6EC1C1DCF99004C603C /* DateFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateFormatter.swift; sourceTree = "<group>"; };
+		A8D1369A1C1B4E12008AA28E /* JSONParceable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONParceable.swift; sourceTree = "<group>"; };
 		FA062BF71BEFFAB900316585 /* Bucket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bucket.swift; sourceTree = "<group>"; };
 		FA062BF91BEFFDEB00316585 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		FA062BFB1BF0011700316585 /* Links.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Links.swift; sourceTree = "<group>"; };
@@ -118,6 +139,7 @@
 			files = (
 				723720101BEEAFFA00FA932A /* RxSwift.framework in Frameworks */,
 				7237200E1BEEAFFA00FA932A /* RxCocoa.framework in Frameworks */,
+				72A370211C03E3F200800221 /* SwiftyJSON.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -125,8 +147,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				723720151BEEB07700FA932A /* Nimble.framework in Frameworks */,
-				723720161BEEB07700FA932A /* Quick.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,8 +156,9 @@
 		723720171BEEB0CE00FA932A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				723720131BEEB07700FA932A /* Nimble.framework */,
-				723720141BEEB07700FA932A /* Quick.framework */,
+				72A370201C03E3F200800221 /* SwiftyJSON.framework */,
+				723720431BEED6D400FA932A /* Nimble.framework */,
+				723720441BEED6D400FA932A /* Quick.framework */,
 				7237200C1BEEAFFA00FA932A /* RxCocoa.framework */,
 				7237200D1BEEAFFA00FA932A /* RxSwift.framework */,
 			);
@@ -206,6 +227,8 @@
 		7237202C1BEEC25D00FA932A /* Support */ = {
 			isa = PBXGroup;
 			children = (
+				72D5388F1BEFF8AB00F9F147 /* JSONConverter.swift */,
+				A85BE6EC1C1DCF99004C603C /* DateFormatter.swift */,
 			);
 			path = Support;
 			sourceTree = "<group>";
@@ -238,6 +261,7 @@
 		723720301BEEC28D00FA932A /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				72D538A21BF014E200F9F147 /* Network */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -265,7 +289,17 @@
 			isa = PBXGroup;
 			children = (
 				2DBA1E8D5A90F35977FD2FDD /* TypedUser.swift */,
+				A8D1369A1C1B4E12008AA28E /* JSONParceable.swift */,
 			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		723720371BEECC2900FA932A /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				72D538A51BF020D900F9F147 /* DribbbleAPISpec.swift */,
+			);
+			path = Network;
 			path = Protocols;
 			sourceTree = "<group>";
 		};
@@ -312,10 +346,31 @@
 		723DBCD41BEE985D00016513 /* BounceTests */ = {
 			isa = PBXGroup;
 			children = (
-				723DBCD51BEE985D00016513 /* BounceTests.swift */,
+				72D538951BF006B900F9F147 /* JSONConverter */,
+				723720371BEECC2900FA932A /* Network */,
 				723DBCD71BEE985D00016513 /* Info.plist */,
 			);
 			path = BounceTests;
+			sourceTree = "<group>";
+		};
+		72D538951BF006B900F9F147 /* JSONConverter */ = {
+			isa = PBXGroup;
+			children = (
+				72D538981BF0078500F9F147 /* JSONConverterSpec.swift */,
+				72D5389E1BF00EE800F9F147 /* testAttachments.json */,
+				72D538961BF0072800F9F147 /* testBucket.json */,
+				72D5389C1BF007F900F9F147 /* testShots.json */,
+			);
+			path = JSONConverter;
+			sourceTree = "<group>";
+		};
+		72D538A21BF014E200F9F147 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				72D538A31BF0150D00F9F147 /* DribbbleAPI.swift */,
+				72D538A01BF014DE00F9F147 /* NetworkController.swift */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -348,7 +403,7 @@
 				723DBCCD1BEE985D00016513 /* Sources */,
 				723DBCCE1BEE985D00016513 /* Frameworks */,
 				723DBCCF1BEE985D00016513 /* Resources */,
-				723720181BEEB17300FA932A /* Copy framework dSYMs */,
+				723720421BEED6AD00FA932A /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -367,7 +422,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0710;
-				LastUpgradeCheck = 0710;
+				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = "Marlow Charite";
 				TargetAttributes = {
 					723DBCBF1BEE985C00016513 = {
@@ -412,6 +467,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				72D538971BF0072800F9F147 /* testBucket.json in Resources */,
+				72D5389D1BF007F900F9F147 /* testShots.json in Resources */,
+				72D5389F1BF00EE800F9F147 /* testAttachments.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -453,10 +511,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A85BE6ED1C1DCF99004C603C /* DateFormatter.swift in Sources */,
 				FA062BFA1BEFFDEB00316585 /* User.swift in Sources */,
 				FA062BF81BEFFAB900316585 /* Bucket.swift in Sources */,
-				7237201F1BEEC10600FA932A /* ViewController.swift in Sources */,
-				723DBCC41BEE985D00016513 /* AppDelegate.swift in Sources */,
+				A86294C61C1B029F00A1BF58 /* JSONConverter.swift in Sources */,
+				A86294C71C1B029F00A1BF58 /* ViewController.swift in Sources */,
+				A86294C81C1B029F00A1BF58 /* AppDelegate.swift in Sources */,
 				FA062BFC1BF0011700316585 /* Links.swift in Sources */,
 				2DBA1785EFBE8339766BC005 /* Shot.swift in Sources */,
 				2DBA10FC316B06F2A28EFDC8 /* Project.swift in Sources */,
@@ -472,6 +532,9 @@
 				2DBA16649874C1CBDD4C4728 /* UserType.swift in Sources */,
 				2DBA13EE23C431BB899664B0 /* LikeType.swift in Sources */,
 				2DBA1F1C5258BF518845711A /* TypedUser.swift in Sources */,
+				72D538A41BF0150D00F9F147 /* DribbbleAPI.swift in Sources */,
+				A8D1369B1C1B4E12008AA28E /* JSONParceable.swift in Sources */,
+				72D538A11BF014DE00F9F147 /* NetworkController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -479,7 +542,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				723DBCD61BEE985D00016513 /* BounceTests.swift in Sources */,
+				72D538991BF0078500F9F147 /* JSONConverterSpec.swift in Sources */,
+				72D538A61BF020D900F9F147 /* DribbbleAPISpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -545,7 +609,7 @@
 				GCC_WARN_UNUSED_LABEL = YES;
 				GCC_WARN_UNUSED_VALUE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				RUN_CLANG_STATIC_ANALYZER = YES;
@@ -599,7 +663,7 @@
 				GCC_WARN_UNUSED_LABEL = YES;
 				GCC_WARN_UNUSED_VALUE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				RUN_CLANG_STATIC_ANALYZER = YES;
 				SDKROOT = macosx;
@@ -643,6 +707,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -652,6 +717,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.medleycrewllc.BounceTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Bounce.app/Contents/MacOS/Bounce";
 			};
 			name = Debug;
@@ -660,6 +727,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -669,6 +737,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.medleycrewllc.BounceTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Bounce.app/Contents/MacOS/Bounce";
 			};
 			name = Release;

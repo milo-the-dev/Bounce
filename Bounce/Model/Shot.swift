@@ -1,4 +1,5 @@
 import Foundation
+import SwiftyJSON
 
 class Shot {
     private (set) var id: Int
@@ -25,13 +26,13 @@ class Shot {
     private (set) var animated: Bool
     private (set) var tags: [String]
     private (set) var user: User
-    private (set) var team: Team
+    private (set) var team: Team?
 
     init(id: Int, title: String, description: String, width: Int, height: Int, images: Images, viewsCount: Int = 0,
          likesCount: Int = 0, commentsCount: Int = 0, attachmentsCount: Int = 0, reboundsCount: Int = 0,
          bucketsCount: Int = 0, createdAt: NSDate, updatedAt: NSDate, htmlUrl: String, attachmentsUrl: String,
          bucketsUrl: String, commentsUrl: String, likesUrl: String, projectsUrl: String, reboundsUrl: String,
-         animated: Bool = false, tags: [String] = [], user: User, team: Team) {
+         animated: Bool = false, tags: [String] = [], user: User, team: Team? = nil) {
 
         self.id = id
         self.title = title
@@ -58,5 +59,46 @@ class Shot {
         self.tags = tags
         self.user = user
         self.team = team
+    }
+}
+
+extension Shot: JSONParceable {
+    class func from(json: JSON) -> Shot {
+        
+        let images = Images.from(json["images"])
+        let user = User.from(json["user"])
+        
+        let createdAt = DateFormatter.dateFromString(json["created_at"].stringValue)
+        let updatedAt = DateFormatter.dateFromString(json["updated_at"].stringValue)
+        
+        let tags = json["tags"].arrayValue.map {
+            String($0)
+        }
+
+        return Shot(id: json["id"].intValue,
+            title: json["title"].stringValue,
+            description: json["description"].stringValue,
+            width: json["width"].intValue,
+            height: json["height"].intValue,
+            images: images,
+            viewsCount: json["views_count"].intValue,
+            likesCount: json["likes_count"].intValue,
+            commentsCount: json["comments_count"].intValue,
+            attachmentsCount: json["attachments_count"].intValue,
+            reboundsCount: json["rebounds_count"].intValue,
+            bucketsCount: json["buckets_count"].intValue,
+            createdAt: createdAt,
+            updatedAt: updatedAt,
+            htmlUrl: json["html_url"].stringValue,
+            attachmentsUrl: json["attachments_url"].stringValue,
+            bucketsUrl: json["buckets_url"].stringValue,
+            commentsUrl: json["comments_url"].stringValue,
+            likesUrl: json["likes_url"].stringValue,
+            projectsUrl: json["projects_url"].stringValue,
+            reboundsUrl: json["rebounds_url"].stringValue,
+            animated: json["animated"].boolValue,
+            tags: tags,
+            user: user,
+            team: nil)
     }
 }

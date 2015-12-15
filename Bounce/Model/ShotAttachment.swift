@@ -1,4 +1,5 @@
 import Foundation
+import SwiftyJSON
 
 class ShotAttachment {
     private (set) var id: Int
@@ -19,5 +20,21 @@ class ShotAttachment {
         self.contentType = contentType
         self.viewsCount = viewsCount
         self.createdAt = createdAt
+    }
+}
+
+extension ShotAttachment: JSONParceable {
+    class func from(json: JSON) -> ShotAttachment {
+        
+        let createdAt = DateFormatter.dateFromString(json["created_at"].stringValue)
+        
+        return ShotAttachment(
+            id: json["id"].intValue,
+            url: json["url"].stringValue,
+            thumbnailUrl: json["thumbnail_url"].stringValue,
+            size: json["size"].intValue,
+            contentType: json["content_type"].stringValue,
+            viewsCount: json["views_count"].intValue,
+            createdAt: createdAt)
     }
 }

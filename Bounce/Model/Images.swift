@@ -1,4 +1,5 @@
 import Foundation
+import SwiftyJSON
 
 class Images {
     private (set) var normal: String
@@ -9,5 +10,14 @@ class Images {
         self.normal = normal
         self.teaser = teaser
         self.hidpi = hidpi;
+    }
+}
+
+extension Images: JSONParceable {
+    class func from(json: JSON) -> Images {
+        return Images(
+            normal: json["normal"].stringValue,
+            teaser: json["teaser"].stringValue,
+            hidpi: json["hidpi"].string)
     }
 }
